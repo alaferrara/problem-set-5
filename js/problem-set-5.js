@@ -28,11 +28,31 @@ function mario() {
 
   // WRITE YOUR EXERCISE 1 CODE HERE
 
+  let block = "#";
+  let space = "&nbsp;"
+  let row = "";
+  while(true) {
+   height = Number(prompt("Please enter a number between 1 and 23:"));
+   if(height >=1 && height <=23 && Number.isInteger(height)) {
+     for(let i=0; i<height; i++) {
+       for(let x=0; x<=(height-2-i); x++) {
+       row = row + space;
+     }
+     for(let y=0; y<=(1+i); y++) {
+         row = row + block;
+       }
+       row = row + "<br/>";
+     }
+     document.getElementById("mario-easy-output").innerHTML="<code>" + row + "</code>";
+     break;
+   }
+  }
+
+
   ////////////////////////// DO NOT MODIFY
   check('mario', height); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
-}
-
+  }
 /*
  * Mario, Again. 10 points.
  *
@@ -62,6 +82,31 @@ function marioAgain() {
   ////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 2 CODE HERE
+
+  let block = "#";
+   let space = "&nbsp;"
+   let row = "";
+   while(true) {
+     height = Number(prompt("Please enter a number between 1 and 23:"));
+     if(height >=1 && height <=23 && Number.isInteger(height)) {
+       for(let i=0; i<height; i++) {
+         for(let x=0; x<=(height-2-i); x++) {
+         row = row + space;
+       }
+       for(let y=0; y<=(1+i); y++) {
+           row = row + block;
+         }
+         row = row + space + space;
+         for(let v=0; v<=(1+i); v++) {
+           row = row + block;
+         }
+         row = row + "<br/>";
+       }
+       document.getElementById("mario-hard-output").innerHTML="<code>" + row + "</code>";
+       break;
+     }
+   }
+
 
   //////////////////////////////// DO NOT MODIFY
   check('mario-again', height); // DO NOT MODIFY
@@ -190,36 +235,7 @@ function hurricane() {
   let windspeed; // DO NOT MODIFY
   ///////////////// DO NOT MODIFY
 
-  windspeed = prompt("Please enter the windspeed");
-while (windspeed < 0)|| windspeed % 1 != 0) {
-  windspeed = prompt("Please enter the windspeed: ");
-}
-
-var div5 = document.getElementById("hurricane-output");
-
-  if (windspeed >= 157) {
-    div5.innerHTML = ("Hurricane Category 5.");
-  }
-  else if (windspeed >= 130 && windspeed <= 156) {
-    div5.innerHTML = ("Huricane Category 4.");
-  }
-  else if (windspeed >=111 && windspeed <= 129) {
-    div5.innerHTML = ("Hurricane Category 3.");
-  }
-  else if (windspeed >= 96 && windspeed <= 110) {
-    div5.innerHTML = ("Huricane Category 2.");
-  }
-  else if (windspeed >= 74 && windspeed <= 95) {
-    div5.innerHTML = ("Hurricane Category 1.");
-  }
-  else if (windspeed >= 39 && windspeed <= 73) {
-    div5.innerHTML = ("Tropical Storm.");
-  }
-  else if (windspeed > 38) {
-    div5.innerHTML = ("The skies are calm...");
-  }
-
-windspeed = Number(windspeed)
+// WRITE YOUR EXERCISE 5 CODE HERE
 
 
   ///////////////////////////////// DO NOT MODIFY
