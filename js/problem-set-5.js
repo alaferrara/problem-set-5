@@ -554,4 +554,4 @@ div7.innerHTML = "Tests: " + testAverage.toFixed(2) + "</br>Quizzes: " + quizAve
     homeworks /////////// DO NOT MODIFY
   ); //////////////////// DO NOT MODIFY
   /////////////////////// DO NOT MODIFY
-}
+} 
